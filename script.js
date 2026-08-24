@@ -50,19 +50,3 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 } else {
   motionTargets.forEach((element) => element.classList.add('is-visible'));
 }
-
-// Give the schematic a small amount of responsive depth on pointer devices.
-const heroVisual = document.querySelector('.hero-visual');
-if (heroVisual && window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  heroVisual.addEventListener('pointermove', (event) => {
-    const bounds = heroVisual.getBoundingClientRect();
-    const x = (event.clientX - bounds.left) / bounds.width - 0.5;
-    const y = (event.clientY - bounds.top) / bounds.height - 0.5;
-    heroVisual.style.setProperty('--tilt-x', `${(-y * 2.5).toFixed(2)}deg`);
-    heroVisual.style.setProperty('--tilt-y', `${(x * 2.5).toFixed(2)}deg`);
-  });
-  heroVisual.addEventListener('pointerleave', () => {
-    heroVisual.style.setProperty('--tilt-x', '0deg');
-    heroVisual.style.setProperty('--tilt-y', '0deg');
-  });
-}
