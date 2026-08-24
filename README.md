@@ -6,5 +6,7 @@ A lightweight static portfolio: no build step, framework, or dependency install 
 
 1. Copy [`projects/project-template.html`](projects/project-template.html) and rename it, for example `projects/line-follower.html`.
 2. Replace the title, introduction, facts and case-study sections with the project details.
-3. Duplicate a card in the `project-list` in [`index.html`](index.html) and point its `href` to the new file.
+3. Duplicate a card in the CAD, Robotics, or Programming `project-list` in [`index.html`](index.html) and point its `href` to the new file.
+4. Edit the strings inside `project-tags` to describe that project, for example `Concept Design`, `Manufacturing`, or `Competition`.
+
 The dark/light preference is saved locally in the browser. Before publishing, replace the example email and social links in `index.html` with your public contact details.
