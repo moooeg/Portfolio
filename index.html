@@ -50,9 +50,10 @@
         <h1 id="hero-title">Building useful things <em>at the edge of</em> hardware & software.</h1>
         <p class="hero-summary">I'm Eric, a mechatronic engineering student focused on turning practical ideas into
           reliable, well-considered machines.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore projects <span
-              aria-hidden="true">↓</span></a><a class="text-link" href="#contact">Connect <span
-              aria-hidden="true">↗</span></a></div>
+        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore projects <svg
+              class="icon" aria-hidden="true"><use href="media/icons.svg#arrow-down"></use></svg></a><a
+            class="text-link" href="#contact">Connect <svg class="icon" aria-hidden="true"><use
+                href="media/icons.svg#arrow-up-right"></use></svg></a></div>
       </div>
     </section>
 
@@ -61,7 +62,8 @@
         <p class="eyebrow section-label"><span></span> 01 / ABOUT</p>
         <p class="intro-statement" id="about">I enjoy the whole engineering loop: defining the problem, modelling the
           mechanism, bringing up the electronics, and writing the code that makes it move.</p><a
-          class="text-link intro-link" href="#contact">More about me <span aria-hidden="true">↓</span></a>
+          class="text-link intro-link" href="#contact">More about me <svg class="icon" aria-hidden="true"><use
+              href="media/icons.svg#arrow-down"></use></svg></a>
       </div>
     </section>
 
@@ -107,7 +109,7 @@
         </div>
         <div class="project-groups">
           <!-- Duplicate a project-card inside the relevant project-list to add another project. -->
-          <section class="project-group reveal" aria-labelledby="cad-projects-heading">
+          <section class="project-group reveal" data-project-type="cad" aria-labelledby="cad-projects-heading">
             <div class="project-group-heading">
               <h3 id="cad-projects-heading">CAD</h3>
               <p>Mechanical design, prototyping and manufacturing.</p>
@@ -122,13 +124,15 @@
                       teamwork.</p>
                     <!-- These tags are plain editable strings. Add, remove or rename them freely. -->
                     <div class="project-tags"><span>Concept Design</span><span>Manufacturing</span><span>Competition</span></div>
-                    <span class="project-arrow" aria-hidden="true">↗</span>
+                    <span class="project-arrow" aria-hidden="true"><svg class="icon"><use
+                          href="media/icons.svg#arrow-up-right"></use></svg></span>
                   </div>
                 </a></article>
             </div>
           </section>
 
-          <section class="project-group reveal" aria-labelledby="robotics-projects-heading">
+          <section class="project-group reveal" data-project-type="robotics"
+            aria-labelledby="robotics-projects-heading">
             <div class="project-group-heading">
               <h3 id="robotics-projects-heading">Robotics</h3>
               <p>Integrated electromechanical systems and autonomous behaviour.</p>
@@ -142,13 +146,15 @@
                     <p>A compact autonomous platform for exploring mechanical packaging, sensing and motion-control
                       trade-offs.</p>
                     <div class="project-tags"><span>Autonomous Navigation</span><span>Motion Control</span><span>Sensors</span></div>
-                    <span class="project-arrow" aria-hidden="true">↗</span>
+                    <span class="project-arrow" aria-hidden="true"><svg class="icon"><use
+                          href="media/icons.svg#arrow-up-right"></use></svg></span>
                   </div>
                 </a></article>
             </div>
           </section>
 
-          <section class="project-group reveal" aria-labelledby="programming-projects-heading">
+          <section class="project-group reveal" data-project-type="programming"
+            aria-labelledby="programming-projects-heading">
             <div class="project-group-heading">
               <h3 id="programming-projects-heading">Programming</h3>
               <p>Embedded software, control systems and engineering tools.</p>
@@ -161,7 +167,8 @@
                     <h3>Embedded Motion<br>Control Platform</h3>
                     <p>A reusable foundation for closed-loop motor control, sensing and rapid embedded prototyping.</p>
                     <div class="project-tags"><span>Embedded C++</span><span>PID Control</span><span>Telemetry</span></div>
-                    <span class="project-arrow" aria-hidden="true">↗</span>
+                    <span class="project-arrow" aria-hidden="true"><svg class="icon"><use
+                          href="media/icons.svg#arrow-up-right"></use></svg></span>
                   </div>
                 </a></article>
             </div>
@@ -204,18 +211,20 @@
           <h2 id="contact-heading">Have an idea worth building?</h2>
         </div>
         <div class="contact-details"><!-- Replace these links with your public contact details before publishing. --><a
-            class="contact-email" href="mailto:ericgu0319@outlook.com">ericgu0319@outlook.com <span
-              aria-hidden="true">↗</span></a>
+            class="contact-email" href="mailto:ericgu0319@outlook.com">ericgu0319@outlook.com <svg class="icon"
+              aria-hidden="true"><use href="media/icons.svg#arrow-up-right"></use></svg></a>
           <p>I'm always keen to connect over robotics, product ideas and collaborative engineering work.</p>
-          <div class="social-links"><a href="https://github.com/moooeg" target="_blank" rel="noreferrer">GitHub <span
-                aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/" target="_blank"
-              rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div>
+          <div class="social-links"><a href="https://github.com/moooeg" target="_blank" rel="noreferrer">GitHub <svg
+                class="icon" aria-hidden="true"><use href="media/icons.svg#arrow-up-right"></use></svg></a><a
+              href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <svg class="icon"
+                aria-hidden="true"><use href="media/icons.svg#arrow-up-right"></use></svg></a></div>
         </div>
       </div>
     </section>
   </main>
   <footer class="site-footer">
-    <div class="section-shell"><span>© <span id="year"></span> Eric Gu</span><a href="#top">Back to top ↑</a></div>
+    <div class="section-shell"><span>© <span id="year"></span> Eric Gu</span><a href="#top">Back to top <svg
+          class="icon" aria-hidden="true"><use href="media/icons.svg#arrow-up"></use></svg></a></div>
   </footer>
   <script src="script.js"></script>
 </body>

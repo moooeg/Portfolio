@@ -9,4 +9,6 @@ A lightweight static portfolio: no build step, framework, or dependency install 
 3. Duplicate a card in the CAD, Robotics, or Programming `project-list` in [`index.html`](index.html) and point its `href` to the new file.
 4. Edit the strings inside `project-tags` to describe that project, for example `Concept Design`, `Manufacturing`, or `Competition`.
 
+Keep the group's `data-project-type` set to `cad`, `robotics`, or `programming` so new cards inherit the correct discipline colour.
+
 The dark/light preference is saved locally in the browser. Before publishing, replace the example email and social links in `index.html` with your public contact details.
