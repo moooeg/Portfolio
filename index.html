@@ -99,41 +99,73 @@
       <div class="section-shell">
         <div class="projects-header reveal">
           <div>
-            <p class="eyebrow section-label"><span></span> 03 / PROJECTS</p>
+            <p class="eyebrow section-label"><span></span> PROJECTS</p>
             <h2 id="projects-heading">Designed to be built.</h2>
           </div>
           <p>Projects are documented from the engineering question through to the implementation. Open any one for its
             process, stack and outcomes.</p>
         </div>
-        <!-- To add a project: duplicate a card below and copy projects/project-template.html. -->
-        <div class="project-list">
-          <article class="project-card project-micromouse reveal"><a class="project-card-link"
-              href="projects/micromouse.html" aria-label="Read the Micromouse project case study">
-              <div class="project-content">
-                <div class="project-meta"><span>01 / ROBOTICS</span><span>2026</span></div>
-                <h3>Micromouse<br>Autonomous Maze Robot</h3>
-                <p>A compact autonomous platform for exploring mechanical packaging, sensing and motion-control
-                  trade-offs.</p><span class="project-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a></article>
-          <article class="project-card project-vex reveal"><a class="project-card-link"
-              href="projects/vex-robotics.html" aria-label="Read the VEX robotics project case study">
-              <div class="project-content">
-                <div class="project-meta"><span>02 / COMPETITION</span><span>2025</span></div>
-                <h3>VEX Robotics<br>Competition System</h3>
-                <p>Engineering a robust competition robot under real constraints of time, weight, reliability and
-                  teamwork.</p><span class="project-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a></article>
-          <article class="project-card project-controller reveal"><a class="project-card-link"
-              href="projects/motion-controller.html" aria-label="Read the embedded motion controller case study">
-              <div class="project-content">
-                <div class="project-meta"><span>03 / EMBEDDED</span><span>2025</span></div>
-                <h3>Embedded Motion<br>Control Platform</h3>
-                <p>A reusable foundation for closed-loop motor control, sensing and rapid embedded prototyping.</p><span
-                  class="project-arrow" aria-hidden="true">↗</span>
-              </div>
-            </a></article>
+        <div class="project-groups">
+          <!-- Duplicate a project-card inside the relevant project-list to add another project. -->
+          <section class="project-group reveal" aria-labelledby="cad-projects-heading">
+            <div class="project-group-heading">
+              <h3 id="cad-projects-heading">CAD</h3>
+              <p>Mechanical design, prototyping and manufacturing.</p>
+            </div>
+            <div class="project-list">
+              <article class="project-card project-vex reveal"><a class="project-card-link"
+                  href="projects/vex-robotics.html" aria-label="Read the VEX robotics project case study">
+                  <div class="project-content">
+                    <div class="project-meta"><span>2025</span></div>
+                    <h3>VEX Robotics<br>Competition System</h3>
+                    <p>Engineering a robust competition robot under real constraints of time, weight, reliability and
+                      teamwork.</p>
+                    <!-- These tags are plain editable strings. Add, remove or rename them freely. -->
+                    <div class="project-tags"><span>Concept Design</span><span>Manufacturing</span><span>Competition</span></div>
+                    <span class="project-arrow" aria-hidden="true">↗</span>
+                  </div>
+                </a></article>
+            </div>
+          </section>
+
+          <section class="project-group reveal" aria-labelledby="robotics-projects-heading">
+            <div class="project-group-heading">
+              <h3 id="robotics-projects-heading">Robotics</h3>
+              <p>Integrated electromechanical systems and autonomous behaviour.</p>
+            </div>
+            <div class="project-list">
+              <article class="project-card project-micromouse reveal"><a class="project-card-link"
+                  href="projects/micromouse.html" aria-label="Read the Micromouse project case study">
+                  <div class="project-content">
+                    <div class="project-meta"><span>2026</span></div>
+                    <h3>Micromouse<br>Autonomous Maze Robot</h3>
+                    <p>A compact autonomous platform for exploring mechanical packaging, sensing and motion-control
+                      trade-offs.</p>
+                    <div class="project-tags"><span>Autonomous Navigation</span><span>Motion Control</span><span>Sensors</span></div>
+                    <span class="project-arrow" aria-hidden="true">↗</span>
+                  </div>
+                </a></article>
+            </div>
+          </section>
+
+          <section class="project-group reveal" aria-labelledby="programming-projects-heading">
+            <div class="project-group-heading">
+              <h3 id="programming-projects-heading">Programming</h3>
+              <p>Embedded software, control systems and engineering tools.</p>
+            </div>
+            <div class="project-list">
+              <article class="project-card project-controller reveal"><a class="project-card-link"
+                  href="projects/motion-controller.html" aria-label="Read the embedded motion controller case study">
+                  <div class="project-content">
+                    <div class="project-meta"><span>2025</span></div>
+                    <h3>Embedded Motion<br>Control Platform</h3>
+                    <p>A reusable foundation for closed-loop motor control, sensing and rapid embedded prototyping.</p>
+                    <div class="project-tags"><span>Embedded C++</span><span>PID Control</span><span>Telemetry</span></div>
+                    <span class="project-arrow" aria-hidden="true">↗</span>
+                  </div>
+                </a></article>
+            </div>
+          </section>
         </div>
       </div>
     </section>

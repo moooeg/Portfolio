@@ -71,3 +71,20 @@
 .project-details{padding-top:78px}
 @media(max-width:900px){.hero{min-height:auto;padding:78px 0 90px}.project-content{min-height:210px}.project-card-link{display:block}}
 @media(max-width:650px){.hero{padding:62px 0 76px}.hero-copy h1{font-size:clamp(3rem,13vw,4.9rem)}.capability-card{min-height:205px}.capability-card h3{margin-top:42px}.project-content{min-height:230px;padding:26px 23px}.project-hero{padding-bottom:45px}.project-details{padding-top:58px}}
+
+/* Project disciplines and editable topic tags */
+.project-groups{display:grid;gap:82px}
+.project-group{display:grid;grid-template-columns:minmax(190px,.34fr) minmax(0,1fr);gap:clamp(40px,7vw,90px);padding-top:32px;border-top:1px solid var(--line)}
+.project-group-heading h3{margin:0 0 14px;font-size:clamp(2.2rem,4vw,3.8rem)}
+.project-group-heading p{max-width:250px;margin:0;color:var(--text-soft);font-size:13px;line-height:1.7}
+.project-group .project-list{grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:16px}
+.project-group .project-content{display:flex;min-height:320px;flex-direction:column}
+.project-group .project-content h3{font-size:clamp(1.8rem,3vw,2.6rem)}
+.project-group .project-content>p{max-width:650px;min-height:0}
+.project-meta{justify-content:flex-end}
+.project-tags{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:auto;padding:30px 34px 0 0}
+.project-tags span{padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:var(--surface-soft);color:var(--text-soft);font:500 10px/1.2 "DM Mono",monospace;letter-spacing:.01em;transition:border-color .2s,color .2s,background .2s}
+.project-card:hover .project-tags span{border-color:color-mix(in srgb,var(--accent) 45%,var(--line));color:var(--text)}
+.project-tags-detail{max-width:760px;margin-top:27px;padding:0}
+@media(max-width:900px){.project-groups{gap:62px}.project-group{grid-template-columns:1fr;gap:26px}.project-group-heading p{max-width:460px}.project-group .project-content{min-height:280px}}
+@media(max-width:650px){.project-groups{gap:50px}.project-group{padding-top:26px}.project-group-heading h3{font-size:2.3rem}.project-group .project-list{grid-template-columns:1fr}.project-group .project-content{min-height:285px}.project-tags{padding-top:25px}}
