@@ -1,51 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 251.69 211.1" style="enable-background:new 0 0 251.69 211.1;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;}
-	.st1{fill:#B8DFD5;}
-	.st2{fill:#70C4BB;}
-	.st3{fill:#5F328E;}
-	.st4{fill:#8564A9;}
-	.st5{fill:#EEEEEF;}
-	.st6{fill:none;stroke:#231815;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-</style>
-<line class="st0" x1="36.31" y1="53.02" x2="36.31" y2="53.01"/>
-<g>
-	<polygon class="st1" points="212.59,128.35 208.21,125.83 182.91,89.82 187.29,92.36 	"/>
-	<polygon class="st1" points="212.59,128.35 150.24,164.35 150.24,159.29 208.21,125.83 	"/>
-	<polygon class="st1" points="140.99,195 136.6,192.47 123.94,174.47 128.33,177 	"/>
-	<polygon class="st2" points="128.33,75.79 128.33,177 123.94,174.47 123.94,73.26 	"/>
-	<polygon class="st1" points="225.25,19.84 128.33,75.79 123.94,73.26 220.87,17.3 	"/>
-	<polygon class="st2" points="233.49,107.48 237.89,113.75 237.89,139.05 140.99,195 128.33,177 128.33,75.79 225.25,19.84 
-		233.52,31.6 237.89,37.83 233.52,40.36 150.24,88.44 150.24,164.35 212.59,128.35 187.29,92.36 212.59,77.75 	"/>
-	<polygon class="st1" points="212.59,77.75 187.29,92.36 182.91,89.82 208.21,75.22 	"/>
-</g>
-<g>
-	<polygon class="st3" points="31.91,50.49 31.91,75.79 97.65,113.75 97.65,139.05 36.3,103.63 31.91,101.09 31.91,126.39 
-		119.57,177 106.91,195 10,139.05 10,37.83 14.38,31.6 22.65,19.84 119.57,75.79 119.57,101.09 36.3,53.02 	"/>
-	<polygon class="st4" points="123.94,174.47 111.29,192.47 106.91,195 119.57,177 	"/>
-	<polygon class="st4" points="123.94,174.47 119.57,177 31.91,126.39 36.3,123.87 	"/>
-	<polygon class="st3" points="36.3,103.63 36.3,123.87 31.91,126.39 31.91,101.09 	"/>
-	<polygon class="st3" points="102.03,111.21 102.03,136.52 97.65,139.05 97.65,113.75 	"/>
-	<polygon class="st4" points="102.03,111.21 97.65,113.75 31.91,75.79 36.3,73.26 	"/>
-	<polygon class="st3" points="36.3,53.02 36.3,73.26 31.91,75.79 31.91,50.49 	"/>
-	<polygon class="st3" points="123.94,73.26 123.94,98.57 119.57,101.09 119.57,75.79 	"/>
-	<polygon class="st4" points="123.94,73.26 119.57,75.79 22.65,19.84 27.03,17.3 	"/>
-</g>
-<g>
-	<polygon class="st5" points="123.94,98.57 123.94,174.47 36.3,123.87 36.3,103.63 97.65,139.05 102.03,136.52 102.03,111.21 
-		36.3,73.26 36.3,53.02 119.57,101.09 	"/>
-	<polygon class="st5" points="233.52,10 220.87,17.3 123.94,73.26 27.03,17.3 14.38,10 	"/>
-	<polygon class="st5" points="27.03,17.3 22.65,19.84 14.38,31.6 14.38,10 	"/>
-	<polygon class="st5" points="233.52,10 233.52,31.6 225.25,19.84 220.87,17.3 	"/>
-	<polygon class="st5" points="123.95,174.47 123.95,199.78 111.3,192.47 	"/>
-	<polygon class="st5" points="233.52,40.36 233.49,107.48 212.59,77.75 208.21,75.22 182.91,89.82 208.21,125.83 150.24,159.29 
-		150.24,88.44 	"/>
-	<polygon class="st5" points="136.61,192.47 123.95,199.78 123.95,174.47 	"/>
-</g>
-<line class="st0" x1="233.52" y1="10" x2="14.38" y2="10"/>
-<path class="st6" d="M123.95,209.6l-12.66-7.31l-4.38,2.53L1.5,143.96V35.14l4.39-6.23V1.5h236.15v27.42l8.16,11.63l-8.16,4.72
-	L242,104.79l4.41,6.27v32.9l-105.42,60.86l-4.38-2.53L123.95,209.6z"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Eric Gu monogram</title>
+  <path d="M32 3 57 17.5v29L32 61 7 46.5v-29L32 3Z" stroke="#1f2328" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M28.5 19H17v26h12.5M17 32h10" stroke="#1f2328" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 24.5a9.5 9.5 0 1 0 0 15V32h-8" stroke="#1f2328" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
