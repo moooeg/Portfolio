@@ -2,6 +2,16 @@
 
 A lightweight static portfolio: no build step, framework, or dependency install required.
 
+## Where to edit content
+
+- **Main-page text, skills, experience and contact links:** `index.html`
+- **Project cards and their editable tags:** the three project lists in `index.html`
+- **Full project descriptions:** the matching file inside `projects/`
+- **Colours, spacing and responsive layout:** `style.css`
+- **Theme, navigation and motion effects:** `script.js`
+
+The HTML files contain `EDIT:` comments above the main content areas. Formatting is controlled by `.prettierrc.json`, so an editor with Prettier can keep the same readable layout automatically.
+
 ## Add a project
 
 1. Copy [`projects/project-template.html`](projects/project-template.html) and rename it, for example `projects/line-follower.html`.

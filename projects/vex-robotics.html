@@ -1,4 +1,288 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="VEX robotics competition project by Eric Gu."><title>VEX Robotics | Eric Gu</title><script>document.documentElement.classList.add('js');(() => { const saved = localStorage.getItem('portfolio-theme'); document.documentElement.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); })();</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="../style.css"></head>
-<body class="project-page"><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header" id="top"><div class="nav-shell"><a class="brand" href="../index.html" aria-label="Eric Gu home"><img src="../media/Logo.svg?v=2" alt="" width="34" height="30"><span>ERIC<span class="brand-mark">.G</span></span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Toggle navigation</span><span></span><span></span></button><nav class="site-nav" id="site-nav" aria-label="Main navigation"><a href="../index.html#about">About</a><a href="../index.html#skills">Skills</a><a href="../index.html#projects">Projects</a><a href="../index.html#experience">Experience</a><a href="../index.html#contact">Contact</a></nav><button class="theme-toggle" type="button" aria-label="Switch colour theme"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.6 14.7A8.7 8.7 0 0 1 9.3 3.4 8.7 8.7 0 1 0 20.6 14.7Z"/></svg></button></div></header>
-<main id="main-content"><section class="project-hero"><a class="project-breadcrumb" href="../index.html#projects"><svg class="icon" aria-hidden="true"><use href="../media/icons.svg#arrow-left"></use></svg><span>Projects</span></a><p class="eyebrow"><span></span> Competition · 2025</p><h1>VEX Robotics<br>Competition System</h1><p class="project-lede">A competition-focused robot programme where rapid design cycles, robustness and clear team communication matter just as much as a clever mechanism.</p></section><div class="project-details"><aside class="project-facts"><div class="project-fact"><span>Role</span><strong>Design · Build · Programming</strong></div><div class="project-fact"><span>Project type</span><strong>Robotics competition</strong></div><div class="project-fact"><span>Focus</span><strong>Reliability · iteration · teamwork</strong></div></aside><article class="case-study"><section><h2>The challenge</h2><p>Competition robotics compresses a product-development cycle into a season. The robot needs to perform under strict constraints, recover from imperfect field conditions and remain maintainable when time between matches is limited.</p></section><section><h2>Engineering approach</h2><p>Design choices are evaluated against real match performance—not only their ideal behaviour. That means considering how quickly a component can be serviced, how reliably a mechanism indexes, and whether software remains predictable after a long day of testing.</p><ul><li>Mechanisms developed around robust actuation and field-serviceable construction.</li><li>Driver control and autonomous routines structured for consistent operation.</li><li>Fast build-test-review cycles that turn match observations into practical changes.</li></ul></section><section><h2>What this project develops</h2><p>The project is a practical lesson in engineering with constraints: choosing the right problem to solve, proving it on the field and communicating decisions clearly within a team.</p><div class="outcome-grid"><div class="outcome-card"><span>DESIGN</span><p>Mechanisms matched to game constraints.</p></div><div class="outcome-card"><span>BUILD</span><p>Robustness and serviceability under pressure.</p></div><div class="outcome-card"><span>ITERATE</span><p>Use test data and match feedback to improve.</p></div></div></section></article></div></main><a class="next-project" href="motion-controller.html"><div><span>NEXT PROJECT</span><strong>Embedded Motion Control Platform</strong></div><span class="next-project-icon" aria-hidden="true"><svg class="icon"><use href="../media/icons.svg#arrow-up-right"></use></svg></span></a><footer class="site-footer"><div class="section-shell"><span>© <span id="year"></span> Eric Gu</span><a href="#top">Back to top <svg class="icon" aria-hidden="true"><use href="../media/icons.svg#arrow-up"></use></svg></a></div></footer><script src="../script.js"></script></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="VEX robotics competition project by Eric Gu." />
+    <title>VEX Robotics | Eric Gu</title>
+    <script>
+        document.documentElement.classList.add('js');
+        (() => {
+            const saved = localStorage.getItem('portfolio-theme');
+            document.documentElement.dataset.theme =
+                saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body class="project-page vex-project-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" id="top">
+        <div class="nav-shell">
+            <a class="brand" href="../index.html" aria-label="Eric Gu home">
+                <img src="../media/Logo.svg?v=2" alt="" width="34" height="30" />
+                <span>ERIC.G</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#skills">Skills</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="../index.html#experience">Experience</a>
+                <a href="../index.html#contact">Contact</a>
+            </nav>
+            <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="4" />
+                    <path
+                        d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                </svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.6 14.7A8.7 8.7 0 0 1 9.3 3.4 8.7 8.7 0 1 0 20.6 14.7Z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="project-hero">
+            <a class="project-breadcrumb" href="../index.html#projects">
+                <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                    <path d="M19 12H5M11 6l-6 6 6 6"></path>
+                </svg>
+                <span>Projects</span>
+            </a>
+            <p class="eyebrow">
+                <span></span>
+                Competition · 2023–2026
+            </p>
+            <h1>
+                VEX Robotics
+                <br />
+                Competition System
+            </h1>
+            <p class="project-lede">
+                A competition-focused robot programme where rapid design cycles, robustness and clear team
+                communication matter just as much as a clever mechanism.
+            </p>
+        </section>
+        <div class="project-details">
+            <aside class="project-facts">
+                <div class="project-fact">
+                    <span>Role</span>
+                    <strong>Programming · Design · Build</strong>
+                </div>
+                <div class="project-fact">
+                    <span>Project type</span>
+                    <strong>Robotics competition</strong>
+                </div>
+                <div class="project-fact">
+                    <span>Focus</span>
+                    <strong>Driver control · autonomous · iteration</strong>
+                </div>
+            </aside>
+            <article class="case-study">
+                <section>
+                    <h2>The challenge</h2>
+                    <p>
+                        Competition robotics compresses a product-development cycle into a season. The robot
+                        needs to perform under strict constraints, recover from imperfect field conditions and
+                        remain maintainable when time between matches is limited.
+                    </p>
+                </section>
+                <section>
+                    <h2>Engineering approach</h2>
+                    <p>
+                        Design choices are evaluated against real match performance—not only their ideal
+                        behaviour. That means considering how quickly a component can be serviced, how
+                        reliably a mechanism indexes, and whether software remains predictable after a long
+                        day of testing.
+                    </p>
+                    <ul>
+                        <li>
+                            Mechanisms developed around robust actuation and field-serviceable construction.
+                        </li>
+                        <li>Driver control and autonomous routines structured for consistent operation.</li>
+                        <li>
+                            Fast build-test-review cycles that turn match observations into practical changes.
+                        </li>
+                    </ul>
+                </section>
+                <section class="vex-season-history">
+                    <h2>Competition seasons</h2>
+                    <div class="vex-season-list">
+                        <article class="vex-season">
+                            <div class="vex-season-copy">
+                                <h3>2025–2026</h3>
+                                <p class="vex-game-name">Push Back</p>
+                                <p>
+                                    Our robot's 'Frij' C++ code, including driver control and autonomous routines and
+                                    engineering notebook recording the develop process,
+                                    for the 2025–2026 'Push Back' season of the VEX Robotics Competition. This
+                                    season, we won Tournament Champion and Build Award at the Australian Nationals and
+                                    represented
+                                    Australia at the VEX Robotics World Championship in April 2026.
+                                </p>
+                                <div class="vex-resource-links">
+                                    <a class="vex-resource-link" href="https://github.com/moooeg/vrc-push-back"
+                                        target="_blank" rel="noreferrer">
+                                        View code on GitHub
+                                        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                                            <path d="M7 17 17 7M8 7h9v9"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="vex-resource-link"
+                                        href="https://docs.google.com/presentation/d/1psg9nj-63eUAKBaR4hDrmHRBGIUmPA62BfW4Va82vfg/edit?usp=sharing"
+                                        target="_blank" rel="noreferrer">
+                                        View engineering notebook
+                                        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                                            <path d="M7 17 17 7M8 7h9v9"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <figure class="vex-season-media">
+                                <img src="../media/frij_2025.jpg" alt="Frij at the 2026 VEX Robotics World Championship"
+                                    width="1920" height="1675" loading="lazy" decoding="async" />
+                                <figcaption>Frij as of April 2026 — at World Championship</figcaption>
+                            </figure>
+                        </article>
+
+                        <article class="vex-season">
+                            <div class="vex-season-copy">
+                                <h3>2024–2025</h3>
+                                <p class="vex-game-name">High Stakes</p>
+                                <p>
+                                    Our robot's 'Frij' Python code, including driver control and autonomous
+                                    routines and engineering notebook recording the develop process, for the 2024–2025
+                                    'High Stakes' season of the VEX Robotics
+                                    Competition. This season, we won the Excellence Award at the Australian
+                                    Nationals and represented Australia at the VEX Robotics World Championship in
+                                    May 2025.
+                                </p>
+                                <div class="vex-resource-links">
+                                    <a class="vex-resource-link" href="https://github.com/moooeg/vrc-High-Stakes"
+                                        target="_blank" rel="noreferrer">
+                                        View code on GitHub
+                                        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                                            <path d="M7 17 17 7M8 7h9v9"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="vex-resource-link"
+                                        href="https://docs.google.com/presentation/d/1EVyZD-M-rycrosDCZWRjpn9RMmF0sojypDkVUfLlPJc/edit?usp=sharing"
+                                        target="_blank" rel="noreferrer">
+                                        View engineering notebook
+                                        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                                            <path d="M7 17 17 7M8 7h9v9"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <figure class="vex-season-media">
+                                <img src="../media/frij_2024.webp" alt="Frij during the 2024–2025 High Stakes season"
+                                    width="1920" height="1392" loading="lazy" decoding="async" />
+                                <figcaption>Frij as of Jan 2025 — preparing for worlds</figcaption>
+                            </figure>
+                        </article>
+
+                        <article class="vex-season">
+                            <div class="vex-season-copy">
+                                <h3>2023–2024</h3>
+                                <p class="vex-game-name">Over Under</p>
+                                <p>
+                                    Our robot's 'Frij' Python code, including driver control and autonomous
+                                    routines and engineering notebook recording the develop process, for the 2023–2024
+                                    VEX Robotics Competition 'Over Under' season. We won
+                                    the Judges Award at the Australian National Championship in December 2023.
+                                </p>
+                                <div class="vex-resource-links">
+                                    <a class="vex-resource-link" href="https://github.com/peterdev22/vrc-over-under"
+                                        target="_blank" rel="noreferrer">
+                                        View code on GitHub
+                                        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                                            <path d="M7 17 17 7M8 7h9v9"></path>
+                                        </svg>
+                                    </a>
+                                    <a class="vex-resource-link"
+                                        href="https://docs.google.com/presentation/d/1ghRfsVt2-iWNgf85-e9URpEpdVsUSIgd-Vsktx36sy8/edit?usp=sharing"
+                                        target="_blank" rel="noreferrer">
+                                        View engineering notebook
+                                        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                                            <path d="M7 17 17 7M8 7h9v9"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <figure class="vex-season-media">
+                                <img src="../media/frij_2023.webp"
+                                    alt="Frij ready for the 2023 Australian National Championship" width="1920"
+                                    height="1356" loading="lazy" decoding="async" />
+                                <figcaption>Frij ready for the Australian National Championship!</figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                </section>
+                <section>
+                    <h2>What this project develops</h2>
+                    <p>
+                        The project is a practical lesson in engineering with constraints: choosing the right
+                        problem to solve, proving it on the field and communicating decisions clearly within a
+                        team.
+                    </p>
+                    <div class="outcome-grid">
+                        <div class="outcome-card">
+                            <span>DESIGN</span>
+                            <p>Mechanisms matched to game constraints.</p>
+                        </div>
+                        <div class="outcome-card">
+                            <span>BUILD</span>
+                            <p>Robustness and serviceability under pressure.</p>
+                        </div>
+                        <div class="outcome-card">
+                            <span>ITERATE</span>
+                            <p>Use test data and match feedback to improve.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+    <a class="next-project" href="motion-controller.html">
+        <div>
+            <span>NEXT PROJECT</span>
+            <strong>Embedded Motion Control Platform</strong>
+        </div>
+        <span class="next-project-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="icon">
+                <path d="M7 17 17 7M8 7h9v9"></path>
+            </svg>
+        </span>
+    </a>
+    <footer class="site-footer">
+        <div class="section-shell">
+            <span>
+                ©
+                <span id="year"></span>
+                Eric Gu
+            </span>
+            <a href="#top">
+                Back to top
+                <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                    <path d="M12 19V5M6 11l6-6 6 6"></path>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>

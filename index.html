@@ -2,33 +2,45 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Eric Gu — Mechatronic Engineering student and robotics engineer portfolio.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Eric Gu — Mechatronic Engineering student and robotics engineer portfolio." />
   <title>Eric Gu | Mechatronics & Robotics</title>
   <script>
     document.documentElement.classList.add('js');
-    (() => { const saved = localStorage.getItem('portfolio-theme'); document.documentElement.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); })();
+    (() => {
+      const saved = localStorage.getItem('portfolio-theme');
+      document.documentElement.dataset.theme =
+        saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    })();
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header" id="top">
     <div class="nav-shell">
-      <a class="brand" href="#top" aria-label="Eric Gu home"><img src="media/Logo.svg?v=2" alt="" width="34"
-          height="30"><span>ERIC<span class="brand-mark">.G</span></span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span
-          class="sr-only">Toggle navigation</span><span></span><span></span></button>
+      <a class="brand" href="#top" aria-label="Eric Gu home">
+        <img src="media/Logo.svg?v=2" alt="" width="34" height="30" />
+        <span>ERIC.G</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a
-          href="#experience">Experience</a><a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
         <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
@@ -44,90 +56,161 @@
   </header>
 
   <main id="main-content">
+    <!-- EDIT: Landing-page introduction -->
     <section class="hero section-shell" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> Mechatronics · Robotics · Design</p>
-        <h1 id="hero-title">Building useful things <em>at the edge of</em> hardware & software.</h1>
-        <p class="hero-summary">I'm Eric, a mechatronic engineering student focused on turning practical ideas into
-          reliable, well-considered machines.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Explore projects <svg
-              class="icon" aria-hidden="true"><use href="media/icons.svg#arrow-down"></use></svg></a><a
-            class="text-link" href="#contact">Connect <svg class="icon" aria-hidden="true"><use
-                href="media/icons.svg#arrow-up-right"></use></svg></a></div>
+        <p class="eyebrow">
+          <span></span>
+          Mechatronics · Robotics · Design
+        </p>
+        <h1 id="hero-title">
+          Building useful things
+          <em>at the edge of</em>
+          hardware & software.
+        </h1>
+        <p class="hero-summary">
+          I'm Eric, a mechatronic engineering student focused on turning practical ideas into
+          reliable, well-considered machines.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Explore projects
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+              <path d="M12 5v14M6 13l6 6 6-6"></path>
+            </svg>
+          </a>
+          <a class="text-link" href="#contact">
+            Connect
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+              <path d="M7 17 17 7M8 7h9v9"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
 
+    <!-- EDIT: About summary -->
     <section class="intro-band">
       <div class="section-shell intro-grid">
-        <p class="eyebrow section-label"><span></span> 01 / ABOUT</p>
-        <p class="intro-statement" id="about">I enjoy the whole engineering loop: defining the problem, modelling the
-          mechanism, bringing up the electronics, and writing the code that makes it move.</p><a
-          class="text-link intro-link" href="#contact">More about me <svg class="icon" aria-hidden="true"><use
-              href="media/icons.svg#arrow-down"></use></svg></a>
+        <p class="eyebrow section-label">
+          <span></span>
+          01 / ABOUT
+        </p>
+        <p class="intro-statement" id="about">
+          I enjoy the whole engineering loop:
+          <br />
+          defining the problem, modelling the mechanism, bringing up the electronics, and writing
+          the code that makes it move.
+        </p>
+        <a class="text-link intro-link" href="#contact">
+          More about me
+          <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+            <path d="M12 5v14M6 13l6 6 6-6"></path>
+          </svg>
+        </a>
       </div>
     </section>
 
+    <!-- EDIT: Skills and technical toolkit -->
     <section class="skills-section section-shell" id="skills" aria-labelledby="skills-heading">
       <div class="section-heading reveal">
-        <p class="eyebrow section-label"><span></span> 02 / SKILLS</p>
+        <p class="eyebrow section-label">
+          <span></span>
+          02 / SKILLS
+        </p>
         <h2 id="skills-heading">A practical, cross-disciplinary approach.</h2>
-        <p>I work comfortably across the mechanical, electrical, and software layers of a system—where the interesting
-          engineering usually happens.</p>
+        <p>
+          I work comfortably across the mechanical, electrical, and software layers of a
+          system—where the interesting engineering usually happens.
+        </p>
       </div>
       <div class="capability-grid">
-        <article class="capability-card reveal"><span class="capability-index">01</span>
+        <article class="capability-card reveal">
+          <span class="capability-index">01</span>
           <h3>Mechanical design</h3>
           <p>CAD modelling, FEA, mechanisms, assemblies, tolerances and 3D-printed prototypes.</p>
         </article>
-        <article class="capability-card reveal"><span class="capability-index">02</span>
+        <article class="capability-card reveal">
+          <span class="capability-index">02</span>
           <h3>Embedded systems</h3>
-          <p>Microcontrollers, sensors, motor drivers, encoder feedback and hardware debugging.</p>
+          <p>
+            Microcontrollers, sensors, motor drivers, encoder feedback and hardware debugging.
+          </p>
         </article>
-        <article class="capability-card reveal"><span class="capability-index">03</span>
+        <article class="capability-card reveal">
+          <span class="capability-index">03</span>
           <h3>Controls & robotics</h3>
           <p>DC motor control, PID tuning, sensor fusion and autonomous systems.</p>
         </article>
-        <article class="capability-card reveal"><span class="capability-index">04</span>
+        <article class="capability-card reveal">
+          <span class="capability-index">04</span>
           <h3>Software</h3>
-          <p>C/C++, Python, ROS and MATLAB for firmware, simulation, tooling and data-driven iteration.</p>
+          <p>
+            C/C++, Python, ROS and MATLAB for firmware, simulation, tooling and data-driven
+            iteration.
+          </p>
         </article>
       </div>
-      <div class="tool-row reveal" aria-label="Tools and platforms"><span>Autodesk Inventor</span><span>Fusion
-          360</span><span>ESP32</span><span>Raspberry Pi
-          Pico</span><span>MATLAB</span><span>Python</span><span>C++</span><span>ROS</span></div>
+      <div class="tool-row reveal" aria-label="Tools and platforms">
+        <span>Autodesk Inventor</span>
+        <span>Fusion 360</span>
+        <span>ESP32</span>
+        <span>Raspberry Pi Pico</span>
+        <span>MATLAB</span>
+        <span>Python</span>
+        <span>C++</span>
+        <span>ROS</span>
+      </div>
     </section>
 
+    <!-- EDIT: Project groups and project cards -->
     <section class="projects-section" id="projects" aria-labelledby="projects-heading">
       <div class="section-shell">
         <div class="projects-header reveal">
           <div>
-            <p class="eyebrow section-label"><span></span> PROJECTS</p>
+            <p class="eyebrow section-label">
+              <span></span>
+              PROJECTS
+            </p>
             <h2 id="projects-heading">Designed to be built.</h2>
           </div>
-          <p>Projects are documented from the engineering question through to the implementation. Open any one for its
-            process, stack and outcomes.</p>
+          <p>
+            Projects are documented from the engineering question through to the implementation.
+            Open any one for its process, stack and outcomes.
+          </p>
         </div>
         <div class="project-groups">
-          <!-- Duplicate a project-card inside the relevant project-list to add another project. -->
+          <!-- Add each project by duplicating one complete project-card in the relevant list. -->
           <section class="project-group reveal" data-project-type="cad" aria-labelledby="cad-projects-heading">
             <div class="project-group-heading">
               <h3 id="cad-projects-heading">CAD</h3>
               <p>Mechanical design, prototyping and manufacturing.</p>
             </div>
             <div class="project-list">
-              <article class="project-card project-vex reveal"><a class="project-card-link"
-                  href="projects/vex-robotics.html" aria-label="Read the VEX robotics project case study">
+              <article class="project-card project-vex reveal">
+                <a class="project-card-link" href="projects/vex-robotics.html"
+                  aria-label="Read the VEX robotics project case study">
                   <div class="project-content">
-                    <div class="project-meta"><span>2025</span></div>
-                    <h3>VEX Robotics<br>Competition System</h3>
-                    <p>Engineering a robust competition robot under real constraints of time, weight, reliability and
-                      teamwork.</p>
+                    <div class="project-meta"><span>2023 - 2026</span></div>
+                    <h3>VEX Robotics Competition V5</h3>
+                    <p>
+                      Engineering a robust robot completing tasks in VEX Robotics Competition.
+                    </p>
                     <!-- These tags are plain editable strings. Add, remove or rename them freely. -->
-                    <div class="project-tags"><span>Concept Design</span><span>Manufacturing</span><span>Competition</span></div>
-                    <span class="project-arrow" aria-hidden="true"><svg class="icon"><use
-                          href="media/icons.svg#arrow-up-right"></use></svg></span>
+                    <div class="project-tags">
+                      <span>Concept Design</span>
+                      <span>Manufacturing</span>
+                      <span>Competition</span>
+                      <span>Full-stack</span>
+                    </div>
+                    <span class="project-arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" class="icon">
+                        <path d="M7 17 17 7M8 7h9v9"></path>
+                      </svg>
+                    </span>
                   </div>
-                </a></article>
+                </a>
+              </article>
             </div>
           </section>
 
@@ -138,18 +221,29 @@
               <p>Integrated electromechanical systems and autonomous behaviour.</p>
             </div>
             <div class="project-list">
-              <article class="project-card project-micromouse reveal"><a class="project-card-link"
-                  href="projects/micromouse.html" aria-label="Read the Micromouse project case study">
+              <article class="project-card project-micromouse reveal">
+                <a class="project-card-link" href="projects/micromouse.html"
+                  aria-label="Read the Micromouse project case study">
                   <div class="project-content">
                     <div class="project-meta"><span>2026</span></div>
-                    <h3>Micromouse<br>Autonomous Maze Robot</h3>
-                    <p>A compact autonomous platform for exploring mechanical packaging, sensing and motion-control
-                      trade-offs.</p>
-                    <div class="project-tags"><span>Autonomous Navigation</span><span>Motion Control</span><span>Sensors</span></div>
-                    <span class="project-arrow" aria-hidden="true"><svg class="icon"><use
-                          href="media/icons.svg#arrow-up-right"></use></svg></span>
+                    <h3>Micromouse Autonomous Maze Robot</h3>
+                    <p>
+                      A compact autonomous platform for exploring mechanical packaging, sensing
+                      and motion-control trade-offs.
+                    </p>
+                    <div class="project-tags">
+                      <span>Autonomous Navigation</span>
+                      <span>Motion Control</span>
+                      <span>Sensors</span>
+                    </div>
+                    <span class="project-arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" class="icon">
+                        <path d="M7 17 17 7M8 7h9v9"></path>
+                      </svg>
+                    </span>
                   </div>
-                </a></article>
+                </a>
+              </article>
             </div>
           </section>
 
@@ -160,71 +254,115 @@
               <p>Embedded software, control systems and engineering tools.</p>
             </div>
             <div class="project-list">
-              <article class="project-card project-controller reveal"><a class="project-card-link"
-                  href="projects/motion-controller.html" aria-label="Read the embedded motion controller case study">
+              <article class="project-card project-portfolio reveal">
+                <a class="project-card-link" href="projects/portfolio-website.html"
+                  aria-label="Read the engineering portfolio website case study">
                   <div class="project-content">
-                    <div class="project-meta"><span>2025</span></div>
-                    <h3>Embedded Motion<br>Control Platform</h3>
-                    <p>A reusable foundation for closed-loop motor control, sensing and rapid embedded prototyping.</p>
-                    <div class="project-tags"><span>Embedded C++</span><span>PID Control</span><span>Telemetry</span></div>
-                    <span class="project-arrow" aria-hidden="true"><svg class="icon"><use
-                          href="media/icons.svg#arrow-up-right"></use></svg></span>
+                    <div class="project-meta"><span>2026</span></div>
+                    <h3>Engineering Portfolio Website</h3>
+                    <p>
+                      You are here! A responsive multi-page website for presenting engineering
+                      projects clearly across CAD, robotics and programming.
+                    </p>
+                    <div class="project-tags">
+                      <span>Frontend</span>
+                      <span>Responsive Design</span>
+                      <span>UI / UX</span>
+                    </div>
+                    <span class="project-arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" class="icon">
+                        <path d="M7 17 17 7M8 7h9v9"></path>
+                      </svg>
+                    </span>
                   </div>
-                </a></article>
+                </a>
+              </article>
             </div>
           </section>
         </div>
       </div>
     </section>
 
+    <!-- EDIT: Education and experience timeline -->
     <section class="experience-section section-shell" id="experience" aria-labelledby="experience-heading">
       <div class="experience-title reveal">
-        <p class="eyebrow section-label"><span></span> 04 / EXPERIENCE</p>
+        <p class="eyebrow section-label">
+          <span></span>
+          04 / EXPERIENCE
+        </p>
         <h2 id="experience-heading">Learning in the lab, on the field and at the workbench.</h2>
       </div>
       <div class="timeline reveal">
         <article class="timeline-item">
           <p class="timeline-date">NOW</p>
           <div>
-            <h3>Mechatronic Engineering</h3>
+            <h3>Bachelor and Master of Engineering major in Mechatronic</h3>
             <p>University of Queensland</p>
           </div>
-          <p class="timeline-description">Developing a systems-level engineering foundation across mechanics,
-            electronics, control and computation.</p>
-        </article>
-        <article class="timeline-item">
-          <p class="timeline-date">ONGOING</p>
-          <div>
-            <h3>Robotics projects & competitions</h3>
-            <p>Independent + team builds</p>
-          </div>
-          <p class="timeline-description">Applying theory through iterative prototypes, autonomous robots and
-            performance-driven design challenges.</p>
+          <p class="timeline-description">
+            Developing a systems-level engineering foundation across mechanics, electronics,
+            control and computation.
+          </p>
         </article>
       </div>
     </section>
 
+    <!-- EDIT: Contact details and profile links -->
     <section class="contact-section" id="contact" aria-labelledby="contact-heading">
       <div class="section-shell contact-grid reveal">
         <div>
-          <p class="eyebrow section-label"><span></span> 05 / CONTACT</p>
-          <h2 id="contact-heading">Have an idea worth building?</h2>
+          <p class="eyebrow section-label">
+            <span></span>
+            05 / CONTACT
+          </p>
+          <h2 id="contact-heading">Want to get in touch?</h2>
         </div>
-        <div class="contact-details"><!-- Replace these links with your public contact details before publishing. --><a
-            class="contact-email" href="mailto:ericgu0319@outlook.com">ericgu0319@outlook.com <svg class="icon"
-              aria-hidden="true"><use href="media/icons.svg#arrow-up-right"></use></svg></a>
-          <p>I'm always keen to connect over robotics, product ideas and collaborative engineering work.</p>
-          <div class="social-links"><a href="https://github.com/moooeg" target="_blank" rel="noreferrer">GitHub <svg
-                class="icon" aria-hidden="true"><use href="media/icons.svg#arrow-up-right"></use></svg></a><a
-              href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <svg class="icon"
-                aria-hidden="true"><use href="media/icons.svg#arrow-up-right"></use></svg></a></div>
+        <div class="contact-details">
+          <!-- Replace these links with your public contact details before publishing. -->
+          <a class="contact-email" href="mailto:ericgu0319@outlook.com">
+            Ericgu0319@outlook.com
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+              <path d="M7 17 17 7M8 7h9v9"></path>
+            </svg>
+          </a>
+          <div class="social-links">
+            <a href="https://github.com/moooeg" target="_blank" rel="noreferrer">
+              GitHub
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/zhexun-gu-564752370/" target="_blank" rel="noreferrer">
+              LinkedIn
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9"></path>
+              </svg>
+            </a>
+            <a href="https://makerworld.com/en/@Moooeg" target="_blank" rel="noreferrer">
+              MakerWorld
+              <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                <path d="M7 17 17 7M8 7h9v9"></path>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="site-footer">
-    <div class="section-shell"><span>© <span id="year"></span> Eric Gu</span><a href="#top">Back to top <svg
-          class="icon" aria-hidden="true"><use href="media/icons.svg#arrow-up"></use></svg></a></div>
+    <div class="section-shell">
+      <span>
+        ©
+        <span id="year"></span>
+        Eric Gu
+      </span>
+      <a href="#top">
+        Back to top
+        <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+          <path d="M12 19V5M6 11l6-6 6 6"></path>
+        </svg>
+      </a>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

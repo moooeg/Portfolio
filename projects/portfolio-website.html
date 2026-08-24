@@ -3,16 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Embedded motion control platform project by Eric Gu." />
-    <title>Motion Control Platform | Eric Gu</title>
+    <meta name="description" content="Portfolio website project by Eric Gu." />
+    <title>Portfolio Website | Eric Gu</title>
+
     <script>
       document.documentElement.classList.add('js');
+
       (() => {
-        const saved = localStorage.getItem('portfolio-theme');
-        document.documentElement.dataset.theme =
-          saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        const systemTheme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = savedTheme || systemTheme;
       })();
     </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,19 +24,23 @@
     />
     <link rel="stylesheet" href="../style.css" />
   </head>
+
   <body class="project-page">
     <a class="skip-link" href="#main-content">Skip to content</a>
+
     <header class="site-header" id="top">
       <div class="nav-shell">
         <a class="brand" href="../index.html" aria-label="Eric Gu home">
           <img src="../media/Logo.svg?v=2" alt="" width="34" height="30" />
           <span>ERIC.G</span>
         </a>
+
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
           <span class="sr-only">Toggle navigation</span>
           <span></span>
           <span></span>
         </button>
+
         <nav class="site-nav" id="site-nav" aria-label="Main navigation">
           <a href="../index.html#about">About</a>
           <a href="../index.html#skills">Skills</a>
@@ -41,18 +48,21 @@
           <a href="../index.html#experience">Experience</a>
           <a href="../index.html#contact">Contact</a>
         </nav>
+
         <button class="theme-toggle" type="button" aria-label="Switch colour theme">
           <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="4" />
+            <circle cx="12" cy="12" r="4"></circle>
             <path
               d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
-            /></svg
-          ><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M20.6 14.7A8.7 8.7 0 0 1 9.3 3.4 8.7 8.7 0 1 0 20.6 14.7Z" />
+            ></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.6 14.7A8.7 8.7 0 0 1 9.3 3.4 8.7 8.7 0 1 0 20.6 14.7Z"></path>
           </svg>
         </button>
       </div>
     </header>
+
     <main id="main-content">
       <section class="project-hero">
         <a class="project-breadcrumb" href="../index.html#projects">
@@ -61,93 +71,108 @@
           </svg>
           <span>Projects</span>
         </a>
+
         <p class="eyebrow">
           <span></span>
-          Embedded · 2025
+          Programming · 2026
         </p>
         <h1>
-          Embedded Motion
+          Engineering Portfolio
           <br />
-          Control Platform
+          Website
         </h1>
         <p class="project-lede">
-          A reusable hardware-and-firmware foundation for turning motor, sensor and control
-          experiments into well-instrumented robotics prototypes.
+          A responsive, multi-page portfolio designed to present mechatronics work clearly across
+          CAD, robotics and programming. Its reusable structure makes future projects easy to add
+          without rebuilding the layout.
         </p>
       </section>
+
       <div class="project-details">
         <aside class="project-facts">
           <div class="project-fact">
             <span>Role</span>
-            <strong>Electronics · Firmware · Test</strong>
+            <strong>UI / UX · Front-end development</strong>
           </div>
           <div class="project-fact">
             <span>Project type</span>
-            <strong>Embedded development</strong>
+            <strong>Personal portfolio</strong>
           </div>
           <div class="project-fact">
-            <span>Focus</span>
-            <strong>Feedback · control · diagnostics</strong>
+            <span>Tools</span>
+            <strong>HTML · CSS · JavaScript</strong>
           </div>
         </aside>
+
         <article class="case-study">
           <section>
             <h2>The challenge</h2>
             <p>
-              Robotic mechanisms are much easier to improve when the electronics and firmware expose
-              useful measurements. This platform is intended to make motor-control experiments
-              repeatable, observable and easy to transfer between projects.
+              Engineering projects combine mechanical design, electronics and software, but those
+              disciplines can be difficult to present in one consistent format. The site needed to
+              remain visually distinctive and easy to scan while also being simple to maintain
+              without a framework or build process.
             </p>
           </section>
+
           <section>
             <h2>Engineering approach</h2>
             <p>
-              The architecture separates hardware interfacing, control logic and diagnostic output.
-              That keeps timing-sensitive control code focused while retaining the information
-              needed to understand how the real mechanism behaves.
+              The website uses semantic HTML for its content, shared CSS for the visual system and a
+              small JavaScript file for behaviour. Project categories use coordinated accent
+              colours, while each case study follows the same reusable information structure.
             </p>
             <ul>
               <li>
-                Motor driver and encoder interfaces selected around the target actuator
-                requirements.
+                CSS custom properties keep the dark and light themes consistent from one colour
+                system.
               </li>
               <li>
-                Closed-loop speed or position control with a clear tuning and measurement workflow.
+                A reusable project template separates editable content from the shared layout and
+                interactions.
               </li>
               <li>
-                Modular firmware interfaces for sensors, telemetry and application-level state
-                machines.
+                Responsive grids keep project cards and technical content readable on desktop and
+                mobile screens.
+              </li>
+              <li>
+                Motion effects respect the browser's reduced-motion preference for accessibility.
               </li>
             </ul>
           </section>
+
           <section>
-            <h2>What this project develops</h2>
+            <h2>Outcome & next steps</h2>
             <p>
-              The main outcome is a more disciplined starting point for mechatronic prototypes:
-              instrumentation first, followed by controlled testing and incremental improvements.
+              The result is a lightweight portfolio that runs directly in a browser, preserves theme
+              preference locally and can grow one project page at a time. Future iterations can add
+              completed project media, test results and deployment automation without changing the
+              core content structure.
             </p>
+
             <div class="outcome-grid">
               <div class="outcome-card">
-                <span>INPUT</span>
-                <p>Capture sensor and encoder feedback.</p>
+                <span>STRUCTURE</span>
+                <p>Reusable cards and case-study pages.</p>
               </div>
               <div class="outcome-card">
-                <span>CONTROL</span>
-                <p>Turn measurements into stable behaviour.</p>
+                <span>THEME</span>
+                <p>Responsive light and dark presentation.</p>
               </div>
               <div class="outcome-card">
-                <span>OUTPUT</span>
-                <p>Use diagnostics to guide each revision.</p>
+                <span>STACK</span>
+                <p>No framework or build dependency.</p>
               </div>
             </div>
           </section>
         </article>
       </div>
     </main>
-    <a class="next-project" href="micromouse.html">
+
+    <a class="next-project" href="../index.html#projects">
       <div>
-        <span>NEXT PROJECT</span>
-        <strong>Micromouse Autonomous Maze Robot</strong>
+        <span>PROJECT INDEX</span>
+        <strong>Explore more engineering projects</strong>
       </div>
       <span class="next-project-icon" aria-hidden="true">
         <svg viewBox="0 0 24 24" class="icon">
@@ -155,6 +180,7 @@
         </svg>
       </span>
     </a>
+
     <footer class="site-footer">
       <div class="section-shell">
         <span>
@@ -170,6 +196,7 @@
         </a>
       </div>
     </footer>
+
     <script src="../script.js"></script>
   </body>
 </html>
