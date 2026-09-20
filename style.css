@@ -2809,3 +2809,159 @@ h2 {
     height: 30px;
   }
 }
+
+/* Micromouse project imagery: CAD-led hero and prototype detail. */
+.micromouse-project-page .project-hero {
+  --micromouse-hero-image-opacity: 0.8;
+  position: relative;
+  width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-right: max(24px, calc((100vw - 1160px) / 2));
+  padding-left: max(24px, calc((100vw - 1160px) / 2));
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--bg);
+}
+.micromouse-project-page .project-hero::before,
+.micromouse-project-page .project-hero::after {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+}
+.micromouse-project-page .project-hero::before {
+  background: url('media/Micromouse CAD.png') right 52% / auto 104% no-repeat;
+  filter: saturate(0.92) contrast(1.04);
+  opacity: var(--micromouse-hero-image-opacity);
+}
+.micromouse-project-page .project-hero::after {
+  background:
+    linear-gradient(
+      90deg,
+      var(--bg) 0%,
+      var(--bg) 27%,
+      color-mix(in srgb, var(--bg) 94%, transparent) 44%,
+      color-mix(in srgb, var(--bg) 52%, transparent) 68%,
+      transparent 88%
+    ),
+    linear-gradient(
+      180deg,
+      var(--bg) 0%,
+      transparent 18%,
+      transparent 78%,
+      var(--bg) 100%
+    );
+}
+.micromouse-project-page .project-hero > * {
+  position: relative;
+  z-index: 1;
+}
+.micromouse-project-page .project-hero h1 {
+  max-width: 720px;
+}
+.micromouse-project-page .project-lede {
+  max-width: 610px;
+}
+:root[data-theme='light'] .micromouse-project-page .project-hero {
+  --micromouse-hero-image-opacity: 0.88;
+}
+:root[data-theme='light'] .micromouse-project-page .project-hero::before {
+  filter: saturate(0.88) contrast(1.02) brightness(1.08);
+}
+.micromouse-project-page .project-details {
+  grid-template-columns: minmax(190px, 0.3fr) minmax(0, 1fr);
+  gap: clamp(48px, 8vw, 110px);
+  width: min(1160px, calc(100% - 48px));
+}
+.micromouse-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(210px, 0.8fr);
+  gap: clamp(26px, 4vw, 48px);
+  align-items: start;
+}
+.micromouse-feature-copy,
+.micromouse-project-media {
+  min-width: 0;
+}
+.micromouse-project-media {
+  width: min(100%, 300px);
+  justify-self: end;
+  margin: 0;
+}
+.micromouse-project-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-soft);
+  box-shadow: var(--shadow-soft);
+}
+.micromouse-project-media figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  line-height: 1.55;
+}
+.eyebrow > .project-status {
+  display: inline-flex;
+  width: auto;
+  height: 22px;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  border: 1px solid color-mix(in srgb, var(--accent) 42%, var(--line));
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font:
+    500 9px/1 'DM Mono',
+    monospace;
+  letter-spacing: 0.05em;
+}
+.eyebrow > .project-status::before {
+  width: 5px;
+  height: 5px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: currentColor;
+  content: '';
+}
+@media (max-width: 900px) {
+  .micromouse-project-page .project-details {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 760px) {
+  .micromouse-feature {
+    grid-template-columns: 1fr;
+  }
+  .micromouse-project-media {
+    width: min(100%, 420px);
+    justify-self: start;
+  }
+}
+@media (max-width: 700px) {
+  .micromouse-project-page .project-hero::before {
+    background-position: 72% center;
+  }
+  .micromouse-project-page .project-hero::after {
+    background:
+      linear-gradient(
+        90deg,
+        var(--bg) 0%,
+        color-mix(in srgb, var(--bg) 95%, transparent) 54%,
+        color-mix(in srgb, var(--bg) 66%, transparent) 100%
+      ),
+      linear-gradient(180deg, transparent 45%, var(--bg) 100%);
+  }
+}
+@media (max-width: 650px) {
+  .micromouse-project-page .project-hero {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
