@@ -20,5 +20,3 @@ The HTML files contain `EDIT:` comments above the main content areas. Formatting
 4. Edit the strings inside `project-tags` to describe that project, for example `Concept Design`, `Manufacturing`, or `Competition`.
 
 Keep the group's `data-project-type` set to `cad`, `robotics`, or `programming` so new cards inherit the correct discipline colour.
-
-The dark/light preference is saved locally in the browser. Before publishing, replace the example email and social links in `index.html` with your public contact details.
